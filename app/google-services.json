@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1048929258720",
+    "project_id": "vanderapp-2969d",
+    "storage_bucket": "vanderapp-2969d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048929258720:android:485e961d0e2daab0cb9485",
+        "android_client_info": {
+          "package_name": "com.Vander.Vanderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048929258720-ojl10o4l49vni3pt67oqaiam0qub8mn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxtSCoqYU4EYRzCOEyLW77nXuZ7sVIk_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048929258720-ojl10o4l49vni3pt67oqaiam0qub8mn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048929258720:android:c98b0c946f59785dcb9485",
+        "android_client_info": {
+          "package_name": "com.vender.Venderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048929258720-ojl10o4l49vni3pt67oqaiam0qub8mn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxtSCoqYU4EYRzCOEyLW77nXuZ7sVIk_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048929258720-ojl10o4l49vni3pt67oqaiam0qub8mn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

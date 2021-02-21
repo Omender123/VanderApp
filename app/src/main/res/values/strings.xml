@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Dealapp</string>
+    <string name="app_name2">Prive</string>
+
+    <string name="welcome">Welcome to</string>
+    <string name="continu">Continue </string>
+    <string name="email">Enter  Mobile Number/Email </string>
+    <string name="password">Enter  Password </string>
+    <string name="term_condition"><font color='#C0C0C0'>By Signing in,I agree to</font><font color='#99A1E4'>
+Terms and Conditions</font></string>
+    <string name="share_on_google">Continue with Google</string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+
+    <string name="title_select_photo_from">Select Photo From :</string>
+
+    <string name="nav_home" translatable="false">Shop Now</string>
+    <string name="nav_chat" translatable="false">Chat With Us</string>
+    <string name="nav_user" translatable="false">User</string>
+    <string name="nav_order" translatable="false">My Orders</string>
+    <string name="nav_profile" translatable="false">My Profile</string>
+    <string name="nav_support" translatable="false">Support</string>
+    <string name="nav_about" translatable="false">About Us</string>
+    <string name="failed" translatable="false">Sorry,Your Payment Has Failed</string>
+    <string name="again" translatable="false">Please Try Again</string>
+    <string name="retry" translatable="false">Retry Order</string>
+    <string name="nav_review" translatable="false">Review Us</string>
+    <string name="nav_contact" translatable="false">Contact Us</string>
+    <string name="nav_share" translatable="false">Share with Friends</string>
+    <string name="nav_logout" translatable="false">Logout</string>
+    <string name="save" translatable="false">    Save</string>
+    <string name="emptyCartInfo">Please add some of the items in Bag that will appear here</string>
+
+    <string name="emptyCart">NO items in the Bag</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_terms" translatable="false">Terms &amp; Privacy</string>
+    <string name="status_stop">Powered By <font color="#f7941e">GoGrocer</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="NestedScrollBarStyle">
+        <item name="android:scrollbarFadeDuration">2</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MenuItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="MenuItemImage">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/circle_gray_dark</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="MenuItemLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MenuItemArrow">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+
+        <item name="android:padding">3dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_hint</item>
+    </style>
+
+    <style name="MenuItemUnderline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/text_hint</item>
+    </style>
+</resources>
