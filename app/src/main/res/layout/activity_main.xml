@@ -17,22 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_view12"
-            android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_height="wrap_content"
-            app:itemIconTint="@color/nav"
-            app:itemTextColor="@color/black"
-
-            android:background="@color/bottomnavigation"
-            app:menu="@menu/bottom_nav_menu" />
-
-    </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -42,7 +27,6 @@
         android:background="@color/bottomnavigation"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
-        app:itemIconTint="@color/nav"
         app:itemTextColor="@color/black"
         app:menu="@menu/activity_main_drawer">
 

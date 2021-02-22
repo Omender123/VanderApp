@@ -4,45 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/transparent"
+    android:background="#D1D1D1"
     android:gravity="top"
     android:orientation="vertical"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_gravity="top"
         android:gravity="top"
-        android:orientation="vertical"
-        android:paddingTop="8dp">
-
-
+        android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/llheadeer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:gravity="center">
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -56,14 +30,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="8dp"
-                    android:gravity="center|left"
-                    android:text="Hey User"
-                    app:itemTextColor="@color/black"
-                    android:textSize="17sp"
-                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="prive"
+                    app:itemTextColor="#555555"
+                    android:textSize="45dp"
+                    android:textColor="#403C3C"
                     android:drawableTint="@color/black"
                     android:drawableRight="@drawable/ic_right_arrow"
-                    android:fontFamily="@font/opensans_semibold"/>
+                    android:fontFamily="@font/blacklist"/>
             </LinearLayout>
 
           <!--  <LinearLayout
@@ -536,4 +510,4 @@
         </ScrollView>
 
     </LinearLayout>
-</LinearLayout>
+

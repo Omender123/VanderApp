@@ -6,53 +6,32 @@
 
         <item
             android:id="@+id/sign"
-            android:icon="@drawable/ic_home"
-            android:title="Login/SignUp" />
+
+            android:title="Profile" />
 
         <item
             android:id="@+id/nav_my_profile"
-            android:icon="@drawable/ic_nav_profile"
-            android:title="@string/nav_profile" />
+
+            android:title="Report of Sale" />
         <!--        <item-->
         <!--            android:id="@+id/nav_support"-->
         <!--            android:icon="@drawable/ic_nav_support"-->
         <!--            android:title="@string/nav_chat" />-->
         <item
             android:id="@+id/nav_aboutus"
-            android:icon="@drawable/account"
-            android:title="@string/nav_about" />
+
+            android:title="Report of Inventory" />
         <item
             android:id="@+id/nav_policy"
-            android:icon="@drawable/ic_nav_policy"
-            android:title="@string/nav_terms" />
-<!--        <item-->
-<!--            android:id="@+id/nav_contact"-->
-<!--            android:icon="@drawable/ic_location_on_black_24dp"-->
-<!--            android:visible="false"-->
-<!--            android:title="@string/nav_contact" />-->
-        <!--        <item-->
-        <!--            android:id="@+id/nav_review"-->
-        <!--            android:icon="@drawable/ic_nav_review"-->
-        <!--            android:title="@string/nav_review" />-->
+            android:title="Order" />
+
         <item
             android:id="@+id/nav_share"
-            android:icon="@drawable/ic_nav_share"
-            android:title="@string/nav_share" />
+            android:title="CONTACT US" />
 
         <item
             android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_exit"
-            android:title="@string/nav_logout" />
+            android:title="LEGAL" />
 
-        <!--        <item-->
-        <!--            android:id="@+id/nav_powerd"-->
-        <!--            android:icon="@drawable/copy"-->
-        <!--            android:title="@string/status_stop" />-->
-
-       <!-- <item
-            android:id="@+id/nav_powerd"
-            android:icon="@drawable/copy"
-            android:title="@string/status_stop" />
--->
     </group>
 </menu>

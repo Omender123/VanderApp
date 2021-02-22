@@ -49,10 +49,10 @@ public class HomeFragment extends Fragment  implements HomeAdapter.ItemListener{
     }
 
     private void initView(View view) {
-        Search_layout = (LinearLayout) view.findViewById(R.id.search_layout);
-        recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
-        setRecyclerdata();
-        Search_layout.setOnClickListener(new View.OnClickListener() {
+       // Search_layout = (LinearLayout) view.findViewById(R.id.search_layout);
+      //  recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+       // setRecyclerdata();
+       /* Search_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -62,7 +62,7 @@ public class HomeFragment extends Fragment  implements HomeAdapter.ItemListener{
                 fragmentTransaction.replace(R.id.contentPanel, searchFragment);
                 fragmentTransaction.commit();
             }
-        });
+        });*/
 
 
     }
@@ -80,9 +80,9 @@ public class HomeFragment extends Fragment  implements HomeAdapter.ItemListener{
         arrayList.add(new Item("Restaurants", R.drawable.hotels, "#E0E0E0"));
 
         HomeAdapter adapter = new HomeAdapter(getContext(), arrayList, this);
-        recyclerView.setAdapter(adapter);
+        //recyclerView.setAdapter(adapter);
         GridLayoutManager manager = new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(manager);
+       // recyclerView.setLayoutManager(manager);
 
     }
     @Override

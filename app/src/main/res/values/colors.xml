@@ -41,5 +41,6 @@
     <color name="gray">#A7A7A7</color>
     <color name="colorGrey">#20000000</color>
     <color name="carbon_transparent_70">#70292a2e</color>
+    <color name="status_color">#cccccc</color>
 
 </resources>

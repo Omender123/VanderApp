@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,6 +23,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -202,6 +205,9 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
             }
         });
 */
+
+        changeStatusBarColor();
+
         sideMenu();
 
         // checkConnection();
@@ -272,7 +278,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                     }
                 });
 
-        initComponent();
+     //   initComponent();
         loadFragment(new HomeFragment());
         // updateHeader();
 //sideMenu();
@@ -292,7 +298,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 .commitAllowingStateLoss();
     }
 
-    private void initComponent() {
+  /*  private void initComponent() {
         navigation = (BottomNavigationView) findViewById(R.id.nav_view12);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("ResourceAsColor")
@@ -319,12 +325,12 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                         transaction2.commit();
 
 
-/*
+*//*
                         CategoryFragment category_fragment = new CategoryFragment();
                         FragmentManager manager2 = getSupportFragmentManager();
                         FragmentTransaction transaction2 = manager2.beginTransaction();
                         transaction2.replace(R.id.contentPanel, category_fragment);
-                        transaction2.commit();*/
+                        transaction2.commit();*//*
                         return true;
 
                     case R.id.navigation_account:
@@ -346,12 +352,12 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                         FragmentTransaction fragmentTransactionnn = m4.beginTransaction();
                         fragmentTransactionnn.replace(R.id.contentPanel, wishlistFragment);
                         fragmentTransactionnn.commit();
-/*
+*//*
                         NotificationFragment nf = new NotificationFragment();
                         FragmentManager m4 = getSupportFragmentManager();
                         FragmentTransaction fragmentTransactionnn = m4.beginTransaction();
                         fragmentTransactionnn.replace(R.id.contentPanel, nf);
-                        fragmentTransactionnn.commit();*/
+                        fragmentTransactionnn.commit();*//*
                         return true;
 //                    case R.id.navigation_newsstand:
 ////                        mTextMessage.setText(item.getTitle());
@@ -373,17 +379,17 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                         FragmentTransaction transaction1 = manager1.beginTransaction();
                         transaction1.replace(R.id.contentPanel, bagFragment);
                         transaction1.commit();
-                     /*   CartFragment favourite_fragment = new CartFragment();
+                     *//*   CartFragment favourite_fragment = new CartFragment();
                         FragmentManager manager1 = getSupportFragmentManager();
                         FragmentTransaction transaction1 = manager1.beginTransaction();
                         transaction1.replace(R.id.contentPanel, favourite_fragment);
-                        transaction1.commit();*/
+                        transaction1.commit();*//*
                         return true;
                 }
                 return false;
             }
         });
-    }
+    }*/
 
 
     @Override
@@ -586,5 +592,11 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
 
     }
-
+    private void changeStatusBarColor() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+        }
+    }
 }
