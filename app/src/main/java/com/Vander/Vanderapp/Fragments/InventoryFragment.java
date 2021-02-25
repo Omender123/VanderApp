@@ -18,7 +18,7 @@ import android.widget.TextView;
 import com.Vander.Vanderapp.MainActivity;
 import com.Vander.Vanderapp.R;
 
-public class BagFragment extends Fragment {
+public class InventoryFragment extends Fragment {
 
     Button btn_Shop;
     RecyclerView recyclerView;
@@ -35,7 +35,7 @@ public class BagFragment extends Fragment {
    // private DatabaseHandler db;
     //private Session_management sessionManagement;
 
-    public BagFragment() {
+    public InventoryFragment() {
     }
 
     @Override

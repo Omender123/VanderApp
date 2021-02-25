@@ -3,8 +3,6 @@ package com.Vander.Vanderapp.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -87,7 +85,7 @@ public class HomeFragment extends Fragment  implements HomeAdapter.ItemListener{
     }
     @Override
     public void onItemClick(Item item) {
-        SecondListStage secondListStage = new SecondListStage ();
+        Order secondListStage = new Order();
         Bundle args = new Bundle();
 
 

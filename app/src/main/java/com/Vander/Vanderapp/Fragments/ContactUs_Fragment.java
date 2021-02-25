@@ -12,10 +12,10 @@ import com.Vander.Vanderapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link StoreFragment#newInstance} factory method to
+ * Use the {@link ContactUs_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class StoreFragment extends Fragment {
+public class ContactUs_Fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class StoreFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public StoreFragment() {
+    public ContactUs_Fragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class StoreFragment extends Fragment {
      * @return A new instance of fragment StoreFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static StoreFragment newInstance(String param1, String param2) {
-        StoreFragment fragment = new StoreFragment();
+    public static ContactUs_Fragment newInstance(String param1, String param2) {
+        ContactUs_Fragment fragment = new ContactUs_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

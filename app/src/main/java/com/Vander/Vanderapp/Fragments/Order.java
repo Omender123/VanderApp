@@ -20,12 +20,12 @@ import com.Vander.Vanderapp.model.Secondcategory_itemlist;
 
 import java.util.ArrayList;
 
-public class SecondListStage extends Fragment implements Secondcategory_Adapter.ItemListener{
+public class Order extends Fragment implements Secondcategory_Adapter.ItemListener{
     TextView categorgyname;
     private RecyclerView recyclerView;
     private ArrayList<Secondcategory_itemlist> arrayList;
 
-    public SecondListStage() {
+    public Order() {
     }
 
 

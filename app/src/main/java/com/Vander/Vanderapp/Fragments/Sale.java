@@ -26,13 +26,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class AccountFragment extends Fragment {
+public class Sale extends Fragment {
     TextView Edit_profile_tv;
     LinearLayout ll_Orders, ll_Notifications, ll_Refer_a_friend, ll_Contact_Us, ll_Support;
     AppCompatButton buttonLogin;
      GoogleSignInClient mGoogleSignInClient;
 
-    public AccountFragment() {
+    public Sale() {
         // Required empty public constructor
     }
 

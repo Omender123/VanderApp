@@ -5,12 +5,12 @@
     <group>
 
         <item
-            android:id="@+id/sign"
+            android:id="@+id/profile"
 
             android:title="Profile" />
 
         <item
-            android:id="@+id/nav_my_profile"
+            android:id="@+id/sale"
 
             android:title="Report of Sale" />
         <!--        <item-->
@@ -18,19 +18,19 @@
         <!--            android:icon="@drawable/ic_nav_support"-->
         <!--            android:title="@string/nav_chat" />-->
         <item
-            android:id="@+id/nav_aboutus"
+            android:id="@+id/Inventory"
 
             android:title="Report of Inventory" />
         <item
-            android:id="@+id/nav_policy"
+            android:id="@+id/order"
             android:title="Order" />
 
         <item
-            android:id="@+id/nav_share"
+            android:id="@+id/contact"
             android:title="CONTACT US" />
 
         <item
-            android:id="@+id/nav_logout"
+            android:id="@+id/legal"
             android:title="LEGAL" />
 
     </group>
