@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_weight="3"
-    android:background="@color/white"
     tools:context=".Fragments.HomeFragment">
 
 
-   </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/lightGrey" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartListView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen10dp"
+        tools:itemCount="2"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/home_adapter_layout" />
+</LinearLayout>
+
+
+

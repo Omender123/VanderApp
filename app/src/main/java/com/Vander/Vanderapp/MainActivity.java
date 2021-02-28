@@ -26,6 +26,7 @@ import com.Vander.Vanderapp.Fragments.HomeFragment;
 import com.Vander.Vanderapp.Fragments.InventoryFragment;
 import com.Vander.Vanderapp.Fragments.Legal_Fragment;
 import com.Vander.Vanderapp.Fragments.Order;
+import com.Vander.Vanderapp.Fragments.ProfileFragment;
 import com.Vander.Vanderapp.Fragments.Sale;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.contentPanel,new HomeFragment())
                     .commit();
-            navigationView.setCheckedItem(R.id.profile);
+            navigationView.setCheckedItem(R.id.Deshbord);
         }
         changeStatusBarColor();
     }
@@ -92,11 +93,18 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.profile:
+            case R.id.Deshbord:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.contentPanel,new HomeFragment())
                         .commit();
-                Toast.makeText(this, "Welcome to home fragment", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Welcome to Home fragment", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.profile:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentPanel,new ProfileFragment())
+                        .commit();
+                Toast.makeText(this, "Welcome to Profile fragment", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.sale:
@@ -111,7 +119,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.contentPanel,new InventoryFragment())
                         .commit();
-                Toast.makeText(this, "Welcome to home fragment", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Welcome to Inventory fragment", Toast.LENGTH_SHORT).show();
 
                 break;
 

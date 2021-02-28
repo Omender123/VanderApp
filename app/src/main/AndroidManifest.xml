@@ -15,14 +15,15 @@
         android:roundIcon="@drawable/logo2"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dealapp">
+        <activity android:name=".Activity.ShowingProductDetailsActivity"></activity>
         <activity
-            android:name="com.Vander.Vanderapp.Activity.LoginAcitivity"
+            android:name=".Activity.LoginAcitivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.Vander.Vanderapp.MainActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.Vander.Vanderapp.Activity.SplashActivity"
+            android:name=".Activity.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,6 +41,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
