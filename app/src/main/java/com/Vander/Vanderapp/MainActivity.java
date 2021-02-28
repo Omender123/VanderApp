@@ -59,11 +59,12 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 this, mdrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         mdrawerLayout.setDrawerListener(toggle);
         toggle.syncState();
+        toggle.syncState();
 
         // CHANGE TOGGLE ICON
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_icon);
         if (savedInstanceState==null){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.contentPanel,new HomeFragment())

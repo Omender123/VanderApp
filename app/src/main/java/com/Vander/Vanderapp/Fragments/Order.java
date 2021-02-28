@@ -1,6 +1,5 @@
 package com.Vander.Vanderapp.Fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.Vander.Vanderapp.Activity.ThirdListStage;
 import com.Vander.Vanderapp.R;
 import com.Vander.Vanderapp.adapter.Secondcategory_Adapter;
 import com.Vander.Vanderapp.model.Secondcategory_itemlist;
@@ -38,8 +36,8 @@ public class Order extends Fragment implements Secondcategory_Adapter.ItemListen
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_second_list_stage, container, false);
-        initView(view);
+        View view = inflater.inflate(R.layout.fragment_order, container, false);
+       // initView(view);
 
 
         return view;
@@ -48,7 +46,7 @@ public class Order extends Fragment implements Secondcategory_Adapter.ItemListen
     private void initView(View view) {
 
         categorgyname=view.findViewById(R.id.categorgyname);
-        recyclerView=view.findViewById(R.id.recycler_secondcategory);
+        //recyclerView=view.findViewById(R.id.recycler_secondcategory);
         try {
 
             Bundle mBundle = new Bundle();
@@ -93,43 +91,6 @@ public class Order extends Fragment implements Secondcategory_Adapter.ItemListen
 
     @Override
     public void onItemClick(Secondcategory_itemlist item) {
-
-        Intent in=new Intent(getContext(),ThirdListStage.class);
-
-
-        if(item.text.trim().equals("MAX"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }else if(item.text.trim().equals("H&M"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }
-        else if(item.text.trim().equals("GAP"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }else if(item.text.trim().equals("A|X"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }else if(item.text.trim().equals("TRENDS"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }else if(item.text.trim().equals("UCB"))
-        {
-            in.putExtra( "item",item.text);
-
-
-        }
-        startActivity(in);
 
 
     }

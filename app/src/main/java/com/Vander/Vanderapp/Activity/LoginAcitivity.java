@@ -145,7 +145,7 @@ public class LoginAcitivity extends AppCompatActivity {
 
                 Toast.makeText(this, personPhoto + "", Toast.LENGTH_SHORT).show();
             }
-            Intent in = new Intent(LoginAcitivity.this, Edit_profile.class);
+           /* Intent in = new Intent(LoginAcitivity.this, Edit_profile.class);
             in.putExtra("personName", personName);
             in.putExtra("personGivenName", personGivenName);
             in.putExtra("personFamilyName", personFamilyName);
@@ -153,7 +153,7 @@ public class LoginAcitivity extends AppCompatActivity {
             in.putExtra("personId", personId);
             in.putExtra("personPhoto", personPhoto);
             startActivity(in);
-
+*/
             // Signed in successfully, show authenticated UI.
             //updateUI(account);
 

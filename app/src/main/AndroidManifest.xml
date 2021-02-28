@@ -16,16 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dealapp">
         <activity
-            android:name="com.Vander.Vanderapp.Activity.ThirdListStage"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize"  />
-        <activity
-            android:name="com.Vander.Vanderapp.Activity.Edit_profile"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity
             android:name="com.Vander.Vanderapp.Activity.LoginAcitivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
@@ -50,6 +40,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -6,56 +6,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
- <!--   <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/bottomnavigation"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
-
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </RelativeLayout>
-
-    </androidx.appcompat.widget.Toolbar>-->
-
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="#E7E5E5"
     >
 
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/bottomnavigation"
+            android:layout_height="56dp"
+            android:background="#E7E5E5"
             app:titleTextAppearance="@style/RobotoBoldTextAppearance"
             app:popupTheme="@style/AppTheme.PopupOverlay"
 
         >
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="prive"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="@dimen/dimen18sp"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                android:fontFamily="@font/blacklist"
-                android:textAlignment="center"
-                android:background="@color/white"
-                android:padding="2dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/white"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:text="prive"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
            </androidx.appcompat.widget.Toolbar>
 
