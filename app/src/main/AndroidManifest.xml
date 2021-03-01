@@ -15,7 +15,19 @@
         android:roundIcon="@drawable/logo2"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dealapp">
-        <activity android:name=".Activity.ShowingProductDetailsActivity"></activity>
+        <activity android:name=".Activity.ContactUs_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.Legal_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.OrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.InventoryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.SaleActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.Profile"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Activity.ShowingProductDetailsActivity" />
         <activity
             android:name=".Activity.LoginAcitivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

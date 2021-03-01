@@ -21,13 +21,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.Vander.Vanderapp.Fragments.ContactUs_Fragment;
+import com.Vander.Vanderapp.Activity.Profile;
+import com.Vander.Vanderapp.Activity.ContactUs_Activity;
 import com.Vander.Vanderapp.Fragments.HomeFragment;
-import com.Vander.Vanderapp.Fragments.InventoryFragment;
-import com.Vander.Vanderapp.Fragments.Legal_Fragment;
-import com.Vander.Vanderapp.Fragments.Order;
-import com.Vander.Vanderapp.Fragments.ProfileFragment;
-import com.Vander.Vanderapp.Fragments.Sale;
+import com.Vander.Vanderapp.Activity.InventoryActivity;
+import com.Vander.Vanderapp.Activity.Legal_Activity;
+import com.Vander.Vanderapp.Activity.OrderActivity;
+import com.Vander.Vanderapp.Activity.SaleActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -101,46 +101,35 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 break;
 
             case R.id.profile:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new ProfileFragment())
-                        .commit();
-                Toast.makeText(this, "Welcome to Profile fragment", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(getApplicationContext(), Profile.class));
+                Toast.makeText(this, "Welcome to Profile ", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.sale:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new Sale())
-                        .commit();
+                startActivity(new Intent(getApplicationContext(), SaleActivity.class));
 
                 Toast.makeText(this, "Welcome to Report of Sale", Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.Inventory:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new InventoryFragment())
-                        .commit();
-                Toast.makeText(this, "Welcome to Inventory fragment", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), InventoryActivity.class));
+                Toast.makeText(this, "Welcome to Inventory ", Toast.LENGTH_SHORT).show();
 
                 break;
 
             case R.id.order:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new Order())
-                        .commit();
+                startActivity(new Intent(getApplicationContext(), OrderActivity.class));
                 Toast.makeText(this, "Welcome to Order", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.contact:
 
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new ContactUs_Fragment())
-                        .commit();
+                startActivity(new Intent(getApplicationContext(), ContactUs_Activity.class));
+
                 Toast.makeText(this, "Welcome to Contact Us", Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.legal:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentPanel,new Legal_Fragment())
-                        .commit();
+                startActivity(new Intent(getApplicationContext(), Legal_Activity.class));
                 Toast.makeText(this, "Welcome to Legal", Toast.LENGTH_SHORT).show();
                 break;
                    }
