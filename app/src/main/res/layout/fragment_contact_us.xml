@@ -13,7 +13,7 @@
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="23dp"
+        android:padding="15dp"
         android:onClick="back"
         android:background="#E7E5E5"
         android:orientation="horizontal">
@@ -106,8 +106,8 @@
             android:textSize="13sp"/>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_margin="20dp"

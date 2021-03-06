@@ -96,4 +96,18 @@ Terms and Conditions</font></string>
     </style>
 
     <string name="report_text">Report of sales</string>
+    <string name="shop_inventory">Welcome to your shop inventory</string>
+
+
+    <string-array name="categories">
+        <item>Electronic</item>
+        <item>fassion</item>
+        <item>CATEGORIES</item>
+    </string-array>
+
+    <string-array name="Subcategories">
+        <item>Electronic</item>
+        <item>fassion</item>
+        <item>CATEGORIES</item>
+    </string-array>
 </resources>
