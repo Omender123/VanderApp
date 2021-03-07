@@ -46,6 +46,7 @@
             android:padding="@dimen/_5sdp"
             android:orientation="vertical">
             <Spinner
+                android:id="@+id/categorySP"
                 android:layout_width="match_parent"
                 android:padding="@dimen/_5sdp"
                 android:textAlignment="center"
@@ -61,6 +62,7 @@
                 android:background="@color/white"
                />
             <Spinner
+                android:id="@+id/subcategorySP"
                 android:layout_width="match_parent"
                 android:padding="@dimen/_5sdp"
                 android:entries="@array/Subcategories"
@@ -247,10 +249,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="  Add"
+                    android:text="Add"
                     android:drawableRight="@mipmap/add_camra"
                     android:textAlignment="center"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:layout_marginLeft="30dp"
                     android:background="@drawable/blackcorner"
                     android:drawablePadding="5dp"

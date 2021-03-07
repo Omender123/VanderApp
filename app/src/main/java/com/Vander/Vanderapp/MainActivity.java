@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.Vander.Vanderapp.Activity.Add_Product;
 import com.Vander.Vanderapp.Activity.Profile;
 import com.Vander.Vanderapp.Activity.ContactUs_Activity;
 import com.Vander.Vanderapp.Fragments.HomeFragment;
@@ -129,7 +130,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
                 break;
             case R.id.legal:
-                startActivity(new Intent(getApplicationContext(), Legal_Activity.class));
+              //  startActivity(new Intent(getApplicationContext(), Legal_Activity.class));
+                startActivity(new Intent(getApplicationContext(), Add_Product.class));
                 Toast.makeText(this, "Welcome to Legal", Toast.LENGTH_SHORT).show();
                 break;
                    }
