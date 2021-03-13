@@ -8,8 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.Vander.Vanderapp.ModelResponse.categoryid;
 import com.Vander.Vanderapp.R;
+import com.Vander.Vanderapp.model.categoryid;
 
 import java.util.ArrayList;
 
@@ -44,13 +44,8 @@ public class CategorySpinnerAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup parent) {
         view = inflter.inflate(R.layout.category_spinner_layout, null);
         TextView Names = (TextView) view.findViewById(R.id.coinName);
-        //TextView coinSymbol = (TextView) view.findViewById(R.id.coinsymbols);
-
-       // coinImages.setImageResource(coinImage[i]);
-
 
         Names.setText(categoryids.get(position).getName());
-       // coinSymbol.setText(coinSymbols[position]);
 
 
         return view;

@@ -143,7 +143,7 @@ public class LoginAcitivity extends AppCompatActivity {
                 personId = acct.getId();
                 personPhoto = acct.getPhotoUrl();
 
-                Toast.makeText(this, personPhoto + "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, personPhoto + personEmail+ "", Toast.LENGTH_SHORT).show();
             }
            /* Intent in = new Intent(LoginAcitivity.this, Edit_profile.class);
             in.putExtra("personName", personName);

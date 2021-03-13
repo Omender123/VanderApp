@@ -1,14 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:orientation="vertical"
-android:background="@color/white"
-android:layout_weight="3">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E5E5"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:onClick="BackFragmentOrder"
+
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_logo_text" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/linear"
+        android:background="#949494" />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#ECECEC"
+
+       >
 
 
-</RelativeLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_grey2_corners"
+
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:onClick="OnClickUpcoming_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/blackcorner"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="#ECECEC"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dimen5dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="9"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="Upcoming orders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:onClick="OnClickCompleted_orders"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/blackcorner"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="#ECECEC"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dimen5dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center"
+                        android:text="5"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_22sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center"
+                        android:text="Completed orders"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

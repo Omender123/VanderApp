@@ -14,6 +14,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -130,8 +131,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
                 break;
             case R.id.legal:
-              //  startActivity(new Intent(getApplicationContext(), Legal_Activity.class));
-                startActivity(new Intent(getApplicationContext(), Add_Product.class));
+            startActivity(new Intent(getApplicationContext(), Legal_Activity.class));
+              //  startActivity(new Intent(getApplicationContext(), Add_Product.class));
                 Toast.makeText(this, "Welcome to Legal", Toast.LENGTH_SHORT).show();
                 break;
                    }
@@ -148,6 +149,16 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
+
+    }
+
+    public void OnClick_AddProduct(View view) {
+
+        Intent intent = new Intent(MainActivity.this, Add_Product.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+
 
     }
 }

@@ -19,6 +19,7 @@
         <item name="windowNoTitle">true</item>
         <item name="statusBarBackground">@color/status_color</item>
     </style>
+
 </resources>
 
 

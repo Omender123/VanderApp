@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="45dp"
+    android:background="#E7E5E5"
     android:gravity="center"
-    android:background="@color/background"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:padding="@dimen/_2sdp">
 
     <!--Make sure image is present in Drawable folder-->
     <TextView
+        android:id="@+id/coinName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen5dp"
+        android:layout_marginLeft="@dimen/dimen5dp"
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:layout_marginBottom="@dimen/dimen5dp"
+        android:fontFamily="@font/sansation"
         android:gravity="center"
-            android:id="@+id/coinName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="ImSmart"
-            android:background="@color/background"
-            android:textColor="@color/black"
-            android:fontFamily="@font/robotomedium"
-            android:textSize="17dp"
-            android:textStyle="bold"/>
-    </LinearLayout>
+        android:text="ImSmart"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <View
+          android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DFDFDF"
+        android:layout_below="@id/coinName"/>
+
+</RelativeLayout>

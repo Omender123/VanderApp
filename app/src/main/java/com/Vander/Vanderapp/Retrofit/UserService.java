@@ -1,7 +1,7 @@
 package com.Vander.Vanderapp.Retrofit;
 
 import com.Vander.Vanderapp.ModelResponse.CategoryListModel;
-import com.Vander.Vanderapp.model.Secondcategory_itemlist;
+import com.Vander.Vanderapp.ModelResponse.Secondcategory_itemlist;
 
 import java.util.List;
 

@@ -97,7 +97,12 @@ Terms and Conditions</font></string>
 
     <string name="report_text">Report of sales</string>
     <string name="shop_inventory">Welcome to your shop inventory</string>
+    <string name="product_image">Product Image</string>
 
+    <string name="label_take_a_photo_of_your_document">Upload a Photo of your </string>
+    <string name="label_ensure_all_information">Ensure all Product Image is Clear and not blurry. Make sure that all corners of the Product Image are visible. Your Product Image may not be accepted if it cannot be Visible properly or all four corners are not visible.</string>
+    <string name="btn_take_photo">Select Photo</string>
+    <string name="label_make_sure_your_document_is_readable">Make sure your Image </string>
 
     <string-array name="categories">
         <item>Electronic</item>

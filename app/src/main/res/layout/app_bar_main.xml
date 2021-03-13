@@ -46,6 +46,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:onClick="OnClick_AddProduct"
         android:layout_width="60dp"
         android:layout_height="60dp"
        app:cardBackgroundColor="@color/black"
